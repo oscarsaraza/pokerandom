@@ -18,7 +18,7 @@ export default function Home() {
       .then((poke) => setPokemon(poke));
   }, [number]);
 
-  const img = pokemon.sprites.other.dream_world.front_default || pokemon.sprites.front_default
+  const img = pokemon?.sprites?.other?.dream_world?.front_default || pokemon?.sprites?.front_default || ''
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
